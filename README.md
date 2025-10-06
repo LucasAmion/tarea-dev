@@ -90,4 +90,6 @@ Lo que se hace entonces es calcular la cantidad de paneles que caben en estas do
 
 ## 🤔 Supuestos y Decisiones
 
-Para el bonus de los rectángulos superpuestos asumí que los rectángulos siempre están pocisionados de manera de que sus anchos son paralelos entre sí y sus altos son paralelos entre sí. De esa manera se puede modelar el problema solo agregando dos parpametros extra: ```overlap_height``` y ```overlap_width```.
+Mi solución no funciona para algunos casos. Por ejemplo calculate_panels(1, 2, 2.5, 4) da 5 y debería dar 4. La verdadera solución sería ver cuántos paneles caben a lo largo y después cuántos paneles a lo ancho en el espacio que queda o viceversa, pero me pareció que tomaría mucho tiempo en implementar, así que me quedé con mi solución más simple que por lo menos pasa todos los tests.
+
+Para el bonus de los rectángulos superpuestos asumí que los rectángulos siempre están pocisionados de manera de que sus anchos son paralelos entre sí y sus altos son paralelos entre sí. De esa manera se puede modelar el problema solo agregando dos parametros extra: ```overlap_height``` y ```overlap_width```.
